@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviour : MonoBehaviour
+public class NewBehaviourScript : MonoBehaviour
 {
 
     public int moveTime;
@@ -31,8 +31,8 @@ public class NewBehaviour : MonoBehaviour
         vin[4] = new Vector3(-2.9f, 2.7f);
         vin[5] = new Vector3(-2.3f, 3.2f);
         vin[6] = new Vector3(-0.9f, 2.2f);
+        vin[7] = new Vector3(-0.9f, 3.5f);
     }
-
 
 
     // Update is called once per frame
@@ -45,16 +45,16 @@ public class NewBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             moveTime = roll_of_Dice;
-            for (int i = 0; vin[i] != myPosition.position; i++){ // 自分の座標がどの配列番号か判定
+            for (int i = 0; i < 33; i++) // 自分の座標がどの配列番号か判定
+            {        
                 if(vin[i] == myPosition.position)
                 {
-                    print(i);
                     nowPos_num = i;
                     break;
                 }
             }
 
-            //配列番号の抽出...メソッドを調べる
+            
             terget_num = nowPos_num + moveTime;//配列番号にサイコロの目を足す
             
             Vector3 pos = myPosition.position;
@@ -64,8 +64,9 @@ public class NewBehaviour : MonoBehaviour
 
             myPosition.position = pos;  // 座標を設定
 
-            Debug.Log(moveTime);
-            Debug.Log(myPosition.position); //正常に動作
+            Debug.Log($"今{nowPos_num}");
+            Debug.Log($"サイコロ {moveTime}");
+            Debug.Log($"位置{myPosition.position}"); 
         
         }
     }

@@ -278,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888792669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.819, y: 0.197, z: 0}
+  m_LocalPosition: {x: -0.9, y: 3.5, z: 0}
   m_LocalScale: {x: 0.23152505, y: 0.25070378, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -293,12 +293,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 888792669}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ded6627292d8245a151b8be40a416a, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ded7395fa0bc3842bdfe95232ce3817, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveTime: 0
   roll_of_Dice: 0
-  i: 0
+  nowPos_num: 0
+  terget_num: 0
 --- !u!1 &1141276206
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,7 +390,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1410990265}
   - component: {fileID: 1410990264}
-  - component: {fileID: 1410990266}
   m_Layer: 0
   m_Name: pop_cat1
   m_TagString: Untagged
@@ -460,21 +460,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1410990266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410990263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11ded6627292d8245a151b8be40a416a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveTime: 0
-  roll_of_Dice: 0
-  i: 0
 --- !u!1 &1824653508
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,7 +8,9 @@ public class PlayerController : MonoBehaviour
 
     public int moveTime;
     public int roll_of_Dice;
-    public int i;            //目標座標
+    public int nowPos_num;
+    public int terget_num;
+
     Vector3 zero = new Vector3(0, 0, 0);
     Vector3 PlayerPos;
     Vector3 searchPos;
@@ -19,6 +21,9 @@ public class PlayerController : MonoBehaviour
     // Start is calld before the first frame update
     void Start()
     {
+        moveTime = 0;
+        Transform myPosition = this.transform;
+        myPosition.position = startPos;
         vin[0] = new Vector3(-5.5f, 0.0f);
         vin[1] = new Vector3(-4.8f, 1.0f);
         vin[2] = new Vector3(-4.2f, 1.8f);
