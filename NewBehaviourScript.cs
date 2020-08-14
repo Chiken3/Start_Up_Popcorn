@@ -24,14 +24,39 @@ public class NewBehaviourScript : MonoBehaviour
         moveTime = 0;
         Transform myPosition = this.transform;
         myPosition.position = startPos;
-        vin[0] = new Vector3(-5.5f, 0.0f);
-        vin[1] = new Vector3(-4.8f, 1.0f);
-        vin[2] = new Vector3(-4.2f, 1.8f);
-        vin[3] = new Vector3(-3.6f, 2.3f);
-        vin[4] = new Vector3(-2.9f, 2.7f);
-        vin[5] = new Vector3(-2.3f, 3.2f);
-        vin[6] = new Vector3(-0.9f, 2.2f);
-        vin[7] = new Vector3(-0.9f, 3.5f);
+        vin[0] = new Vector3(-7.8f, 0.0f); //vin 内側のひし形升
+        vin[1] = new Vector3(-7f  , 1.7f);
+        vin[2] = new Vector3(-6f  , 2.3f);
+        vin[3] = new Vector3(-5f  , 3f  );
+        vin[4] = new Vector3(-4f  , 3.6f);
+        vin[5] = new Vector3(-3f  , 4.3f);
+        vin[6] = new Vector3(-2f  , 4.6f);
+        vin[7] = new Vector3(-1f  , 5.5f);
+        vin[8] = new Vector3( 0f  , 5.8f);
+        vin[9] = new Vector3( 1f  , 5.1f);
+        vin[10] = new Vector3(2.4f, 4.8f);
+        vin[11] = new Vector3(3.2f, 4.0f);
+        vin[12] = new Vector3(4.3f, 3.2f);
+        vin[13] = new Vector3(5.1f, 2.7f);
+        vin[14] = new Vector3(6.2f, 1.9f);
+        vin[15] = new Vector3(7.0f, 1.0f);
+        vin[16] = new Vector3(8.0f, 0.0f);
+        vin[17] = new Vector3(7.0f, -0.9f);
+        vin[18] = new Vector3(5.8f, -1f);
+        vin[19] = new Vector3(4.8f, -1.5f);
+        vin[20] = new Vector3(3.9f, -2.3f);
+        vin[21] = new Vector3(2.9f, -3.1f);
+        vin[22] = new Vector3(2.0f, -3.6f);
+        vin[23] = new Vector3(1.2f, -4.3f);
+        vin[24] = new Vector3(0.0f, -5.4f);
+        vin[25] = new Vector3(-0.8f, -4.0f);
+        vin[26] = new Vector3(-1.7f, -3.3f);
+        vin[27] = new Vector3(-2.8f, -2.7f);
+        vin[28] = new Vector3(-3.8f, -2.1f);
+        vin[29] = new Vector3(-4.7f, -1.5f);
+        vin[30] = new Vector3(-5.7f, -0.6f);
+        vin[31] = new Vector3(-6.6f, -0.3f);
+      
     }
 
 
