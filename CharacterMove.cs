@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class CharacterMove : MonoBehaviour
 {
 
     public int moveTime;
@@ -14,7 +14,7 @@ public class NewBehaviourScript : MonoBehaviour
     Vector3 zero = new Vector3(0, 0, 0);
     Vector3 PlayerPos;
     Vector3 searchPos;
-    Vector3 startPos = new Vector3(-5.5f, 0.0f);
+    Vector3 startPos = new Vector3(-7.8f, 0.0f);
     Vector3[] vin = new Vector3[32];
     Vector3[] vout = new Vector3[48];
 
@@ -118,12 +118,13 @@ public class NewBehaviourScript : MonoBehaviour
     {
 
         Transform myPosition = this.transform;
-        roll_of_Dice = UnityEngine.Random.Range(1, 6);
+        
 
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
+            roll_of_Dice = UnityEngine.Random.Range(1, 6);
             moveTime = roll_of_Dice;
-            for (int i = 0; i < 33; i++) // 自分の座標がどの配列番号か判定
+            for (int i = 0; i < 33; i++) // 自分の座標がどの配列番号か判定(内側)
             {        
                 if(vin[i] == myPosition.position)
                 {
